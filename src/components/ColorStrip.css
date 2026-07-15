@@ -1,0 +1,51 @@
+.color-strip {
+  width: 100%;
+  background: var(--strip-color, #f6f0e8);
+  height: var(--strip-height, 20px);
+  transition: height 160ms ease, background-color 200ms ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* subtle rounded corners for standalone strips */
+.color-strip.rounded {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* Responsive: reduce height on smaller screens */
+@media (max-width: 768px) {
+  .color-strip {
+    height: var(--strip-mobile-height, 10px);
+  }
+}
+
+/* Utility to give a small gap around strip when used inline */
+.color-strip.gap-top {
+  margin-top: 12px;
+}
+.color-strip.gap-bottom {
+  margin-bottom: 12px;
+}
+
+/* Full-bleed utility: span the entire viewport width regardless of container */
+.color-strip.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  left: 0;
+  position: relative;
+}
+
+/* When used as an overlay to sit on top of images/text */
+.color-strip.overlay {
+  position: relative;
+  z-index: 20;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .color-strip.full-bleed {
+    height: var(--strip-mobile-height, 12px) !important;
+  }
+}

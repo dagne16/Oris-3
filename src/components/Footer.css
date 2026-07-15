@@ -1,0 +1,141 @@
+.footer {
+  background: #0f3730;
+  color: #f4f2ea;
+  padding: 48px 24px 28px;
+}
+
+.footer-top {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.footer-brand-block {
+  min-width: 280px;
+  max-width: 420px;
+}
+
+.footer-brand {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
+.footer-tagline {
+  margin: 20px 0 0;
+  color: rgba(244, 242, 234, 0.85);
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 360px;
+}
+
+.footer-social {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.footer-icon:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.footer-links-block {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.footer-link-group {
+  min-width: 160px;
+}
+
+.footer-link-group-title {
+  margin-bottom: 18px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(244, 242, 234, 0.65);
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 12px;
+  color: rgba(244, 242, 234, 0.9);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #f8d28c;
+}
+
+.footer-bottom {
+  max-width: 1280px;
+  margin: 32px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgba(244, 242, 234, 0.72);
+  font-size: 14px;
+}
+
+.footer-note {
+  color: rgba(244, 242, 234, 0.72);
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-links-block {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 32px 16px 20px;
+  }
+
+  .footer-top {
+    gap: 24px;
+  }
+
+  .footer-brand {
+    font-size: 26px;
+  }
+
+  .footer-link-group {
+    min-width: 120px;
+  }
+}
